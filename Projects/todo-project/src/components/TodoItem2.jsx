@@ -1,9 +1,11 @@
 const TodoItem2 = () => {
+  let todoName = "Go to College";
+  let todoDate = "18-12-2023";
   return (
     <div className="container text-center">
       <div className="row">
-        <div className="col-6">Buy car</div>
-        <div className="col-4">18-12-2023</div>
+        <div className="col-6">{todoName}</div>
+        <div className="col-4">{todoDate}</div>
         <div className="col-2">
           <button type="button" className="btn btn-danger">
             Delete
