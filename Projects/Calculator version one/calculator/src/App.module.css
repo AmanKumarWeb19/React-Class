@@ -1,0 +1,15 @@
+.calculator {
+  border: 2px solid rgb(223, 219, 219);
+  border-radius: 5px;
+  width: 400px;
+}
+.display {
+  margin: 20px;
+  width: 350px;
+  font-size: 40px;
+  border: 2px solid rgb(223, 219, 219);
+  border-radius: 5px;
+}
+.btnContainer{
+  
+}
