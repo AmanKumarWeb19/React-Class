@@ -3,23 +3,6 @@
   border-radius: 5px;
   width: 400px;
 }
-.display {
-  margin: 20px;
-  width: 350px;
-  font-size: 40px;
-  font-weight: bold;
-  border: 2px solid rgb(223, 219, 219);
-  border-radius: 5px;
-}
-.btnContainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.btn {
-  width: 90px;
-  height: 90px;
-  margin: 6px;
-  font-size: 25px;
-  font-weight: 500;
-}
+
+
+
