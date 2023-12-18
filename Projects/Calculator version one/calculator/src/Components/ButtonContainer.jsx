@@ -23,12 +23,9 @@ const ButtonContainer = () => {
 
   return (
     <div className={styles.btnContainer}>
-      <button className={styles.btn}>C</button>
-      <button className={styles.btn}>1</button>
-      <button className={styles.btn}>2</button>
-      <button className={styles.btn}>+</button>
-      <button className={styles.btn}>C</button>
-      <button className={styles.btn}>C</button>
+      {ButtonNames.map((buttonName) => (
+        <button className={styles.btn}>{buttonName}</button>
+      ))}
     </div>
   );
 };
