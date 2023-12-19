@@ -1,0 +1,10 @@
+input {
+  width: 100%;
+}
+
+.row-class {
+  margin: 10px 3px;
+}
+.btn-class {
+  min-width: 200px;
+}
