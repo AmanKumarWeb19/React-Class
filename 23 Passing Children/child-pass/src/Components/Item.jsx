@@ -6,7 +6,7 @@ const Item = ({ foodItem }) => {
       <span className={`${styles["kg-span"]}`}>{foodItem}</span>
       <button
         className={`${styles.button} btn btn-info `}
-        onClick={() => console.log("buy button on click")}
+        onClick={() => console.log(`${foodItem} is being bought`)}
       >
         Buy
       </button>
