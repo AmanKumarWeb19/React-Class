@@ -13,14 +13,15 @@ const AddTodo = ({ onNewItem }) => {
     setDueDate(event.target.value);
   };
 
-  const handleAddButtonClicked = () => {
+  const handleAddButtonClicked = (event) => {
+    event.preventDefault();
     onNewItem(todoName, dueDate);
     setTodoName("");
     setDueDate("");
   };
   return (
     <div className="container">
-      <div className="row row-class">
+      <form className="row row-class" onSubmit={handleAddButtonClicked}>
         <div className="col-6">
           <input
             type="text"
@@ -33,15 +34,11 @@ const AddTodo = ({ onNewItem }) => {
           <input type="date" value={dueDate} onChange={handleDateChange} />
         </div>
         <div className="col-2">
-          <button
-            type="button"
-            className="btn btn-success btn-class"
-            onClick={handleAddButtonClicked}
-          >
+          <button type="submit" className="btn btn-success btn-class">
             <IoBagAddOutline />
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
