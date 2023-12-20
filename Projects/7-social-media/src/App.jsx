@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import SideBar from "./Components/Sidebar";
 import CreatePost from "./Components/CreatePost";
+import PostList from "./Components/PostList";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="content">
         <Header />
         <CreatePost />
+        <PostList />
         <Footer />
       </div>
     </div>
