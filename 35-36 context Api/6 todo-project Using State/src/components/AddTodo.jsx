@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoBagAddOutline } from "react-icons/io5";
+import { TodoItemsContext } from "../store/Todo-items-store";
 
-const AddTodo = ({ onNewItem }) => {
+const AddTodo = () => {
+  const { addNewItem } = useContext(TodoItemsContext);
+
   const [todoName, setTodoName] = useState("");
   const [dueDate, setDueDate] = useState("");
 
@@ -15,7 +18,7 @@ const AddTodo = ({ onNewItem }) => {
 
   const handleAddButtonClicked = (event) => {
     event.preventDefault();
-    onNewItem(todoName, dueDate);
+    addNewItem(todoName, dueDate);
     setTodoName("");
     setDueDate("");
   };
