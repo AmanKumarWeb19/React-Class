@@ -1,4 +1,4 @@
-const SideBar = ({ selectedTab, setSelectedTab }) => {
+const SideBar = () => {
   const handleOnClick = (tabName) => {
     tabName;
   };
@@ -22,50 +22,27 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
         <li
           className="nav-item"
           onClick={() => {
-            setSelectedTab("Home");
+            console.log("Home");
+            // setSelectedTab("Home");
           }}
         >
-          <a
-            href="#"
-            className={`nav-link text-white ${
-              selectedTab === "Home" && "active"
-            }`}
-            aria-current="page"
-          >
+          <a href="/" className="nav-link text-white" aria-current="page">
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#home"></use>
             </svg>
             Home
           </a>
         </li>
-        <li
-          onClick={() => {
-            setSelectedTab("Create Post");
-          }}
-        >
-          <a
-            href="#"
-            className={`nav-link text-white ${
-              selectedTab === "Create Post" && "active"
-            }`}
-          >
+        <li>
+          <a href="/create-post" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#speedometer2"></use>
             </svg>
             Create Post
           </a>
         </li>
-        <li
-          onClick={() => {
-            setSelectedTab("Orders");
-          }}
-        >
-          <a
-            href="#"
-            className={`nav-link text-white ${
-              selectedTab === "Orders" && "active"
-            }`}
-          >
+        <li>
+          <a href="#" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#table"></use>
             </svg>
