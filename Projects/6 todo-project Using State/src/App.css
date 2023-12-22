@@ -2,9 +2,9 @@ input {
   width: 100%;
 }
 
-.row-class {
+.row-className {
   margin: 10px 3px;
 }
-.btn-class {
+.btn-className {
   min-width: 200px;
 }

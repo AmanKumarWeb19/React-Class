@@ -21,7 +21,7 @@ const AddTodo = ({ onNewItem }) => {
   };
   return (
     <div className="container">
-      <form className="row row-class" onSubmit={handleAddButtonClicked}>
+      <form className="row row-className" onSubmit={handleAddButtonClicked}>
         <div className="col-6">
           <input
             type="text"
@@ -34,7 +34,7 @@ const AddTodo = ({ onNewItem }) => {
           <input type="date" value={dueDate} onChange={handleDateChange} />
         </div>
         <div className="col-2">
-          <button type="submit" className="btn btn-success btn-class">
+          <button type="submit" className="btn btn-success btn-className">
             <IoBagAddOutline />
           </button>
         </div>

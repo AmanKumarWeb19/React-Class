@@ -2,13 +2,13 @@ import { AiTwotoneDelete } from "react-icons/ai";
 const TodoItem = ({ todoName, todoDate, onDeleteClick }) => {
   return (
     <div className="container">
-      <div className="row row-class">
+      <div className="row row-className">
         <div className="col-6">{todoName}</div>
         <div className="col-4">{todoDate}</div>
         <div className="col-2">
           <button
             type="button"
-            className="btn btn-danger btn-class"
+            className="btn btn-danger btn-className"
             onClick={() => onDeleteClick(todoName)}
           >
             <AiTwotoneDelete />
