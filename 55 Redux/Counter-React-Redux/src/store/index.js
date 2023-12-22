@@ -2,6 +2,7 @@ import { createStore } from "redux";
 
 const INITIAL_VALUE = {
   counter: 0,
+  privacy: false,
 };
 
 const CounterReducer = (store = INITIAL_VALUE, action) => {
@@ -13,6 +14,8 @@ const CounterReducer = (store = INITIAL_VALUE, action) => {
     return { counter: store.counter + Number(action.payload.num) };
   } else if (action.type === "SUBTRACT") {
     return { counter: store.counter - Number(action.payload.num) };
+  } else if (action.type === "PRIVACY_TOGGLE") {
+    return { privacy: !store.privacy };
   }
   console.log("Action Recieved", action);
   return store;
