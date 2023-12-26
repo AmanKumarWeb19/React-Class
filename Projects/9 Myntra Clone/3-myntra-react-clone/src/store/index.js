@@ -1,9 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import itemSlice from "./itemsSlice";
+import itemsSlice from "./itemsSlice";
+import fetchStatusSlice from "./fetchStatusSlice";
+// import bagSlice from "./bagSlice";
 
 const myntraStore = configureStore({
   reducer: {
-    items: itemSlice.reducer,
+    items: itemsSlice.reducer,
+    fetchStatus: fetchStatusSlice.reducer,
+    // bag: bagSlice.reducer,
   },
 });
 
