@@ -35,25 +35,16 @@ const Header = () => {
         </div>
         <div className="action_bar">
           <div className="action_container">
-            {/* <span className="material-symbols-outlined action_icon">
-              person
-            </span> */}
             <IoMdPerson />
             <span className="action_name">Profile</span>
           </div>
 
           <div className="action_container">
-            {/* <span className="material-symbols-outlined action_icon">
-              favorite
-            </span> */}
             <FaHeartPulse />
             <span className="action_name">Wishlist</span>
           </div>
 
           <Link to="/bag" className="action_container">
-            {/* <span className="material-symbols-outlined action_icon">
-              shopping_bag
-            </span> */}
             <IoBagAddSharp />
             <span className="action_name">Bag</span>
             <span className="bag-item-count">0</span>
