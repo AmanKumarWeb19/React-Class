@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <main>
       <div className="items-container">
-        <HomeItem item={items[0]} />
+        {items.map((item) => (
+          <HomeItem key={item.id} item={item} />
+        ))}
       </div>
     </main>
   );
